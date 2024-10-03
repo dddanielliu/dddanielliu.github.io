@@ -173,16 +173,12 @@
                     document.getElementById("semesterTerm").value = 2; // Set semester to 2
                 }
             }
-            
+
             // Function to update semester information
             function updateSemester() {
                 var semesterYear = document.getElementById("semesterYear").value;
                 var semesterTerm = document.getElementById("semesterTerm").value;
                 document.getElementById("s_tcyyL").innerText = `${semesterYear} 學年度 第 ${semesterTerm} 學期`;
-            }
-            
-            function setCensorPlaceHolder() {
-                document.getElementById("institute").value = `\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000`
             }
 
             function printAndShowErrRow() {
@@ -195,7 +191,6 @@
                 setTodayDate();
                 // setDefaultcourse();
                 setDefaultSemester();
-                setCensorPlaceHolder();
                 updateChart();
                 if ('scrollRestoration' in history) {
                     history.scrollRestoration = 'manual';
@@ -215,52 +210,52 @@
                     <td>學期：</td>
                     <td><input type="text" id="semesterTerm" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>系級：</td>
                     <td><input type="text" id="departmentYear" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>學號：</td>
                     <td><input type="text" id="studentID" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>姓名：</td>
                     <td><input type="text" id="name" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>電子郵件：</td>
                     <td><input type="text" id="email" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>輔系/雙修：(若無則留白)
                     </td>
                     <td><input type="text" id="amajor" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>科目代號：</td>
                     <td><input type="text" id="course" class="inputField" placeholder="000000-000" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>科目名稱：</td>
                     <td><input type="text" id="coursename" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>學分：</td>
                     <td><input type="text" id="point" class="inputField" placeholder="0.0" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>上課時間</td>
                     <td><input type="text" id="session" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>遞補序：</td>
                     <td><input type="text" id="PWL" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>開課單位：</td>
                     <td><input type="text" id="institute" class="inputField" oninput="updateChart()"></td>
                 </tr>
-                <tr style="display:none;">
+                <tr">
                     <td>授課教師：</td>
                     <td><input type="text" id="instructor" class="inputField" oninput="updateChart()"></td>
                 </tr>
